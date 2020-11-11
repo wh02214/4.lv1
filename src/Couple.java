@@ -36,6 +36,7 @@ class Couple implements Calculate {
             System.out.println("请继续");
         } while (a != 0);
         System.out.println("sum=" + sum);
+        System.out.println("算完啦");
 
     }
 
