@@ -18,22 +18,23 @@ class Couple implements Calculate {
         System.out.println("2:计算阶层。");
         System.out.println("3:计算斐波那契数列第n项。");
 
-        System.out.println("please input a number:");
+        System.out.println("please tell me what do you want to do?");
     }
 
     @Override
     public void count() {
-        System.out.println("开始累加计数：(结束请输入-1)");                  //累加计数
+        System.out.println("开始累加计数：(结束请输入0)");                  //累加计数
         System.out.println("请输入一个数：");
         int sum = 0;
         int a;
+
         do {
             Scanner se1 = new Scanner(System.in);
             a = se1.nextInt();
             sum += a;
             System.out.println("sum=" + sum);
             System.out.println("请继续");
-        } while (a != -1);
+        } while (a != 0);
         System.out.println("sum=" + sum);
 
     }
