@@ -2,7 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Couple couple = new Couple();
+
         couple.introduce();
 //        String menu = "累加，阶层，斐波那契数列";
         Scanner sc = new Scanner(System.in);

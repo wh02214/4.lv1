@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
+import static java.lang.Thread.sleep;
+
 class Couple implements Calculate {
-    private String name = "cp";
+    private String name = "qgwreag";
 
     public void setName(String name) {
         this.name = name;
@@ -18,7 +20,7 @@ class Couple implements Calculate {
         System.out.println("2:计算阶层。");
         System.out.println("3:计算斐波那契数列第n项。");
 
-        System.out.println("please tell me what do you want to do?");
+        System.out.println("please tell me what do you want to do?（no numbers）");
     }
 
     @Override
@@ -46,11 +48,18 @@ class Couple implements Calculate {
         System.out.println("请输入你想计算的阶层：");
         Scanner se2 = new Scanner(System.in);
         int b = se2.nextInt();
+        System.out.println("正在计算......");
         int result = 1;
         for (int i = 1; i <= b; i++) {
             result *= i;
         }
+        try {
+            sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         System.out.println(b + "的阶层为 " + result);
+        System.out.println("计算完成。");
     }
 
     @Override
