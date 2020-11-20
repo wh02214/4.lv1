@@ -29,7 +29,7 @@ public class Main {
                 System.out.println("请输入斐波那契数列的项数");
                 Scanner scanner = new Scanner(System.in);
                 int n = scanner.nextInt();
-                System.out.println("第" + n + "项为：" + couple.fb(n));
+                System.out.println("第" + n + "项 为：" + couple.fb(n));
                 break;
             }
             default:
